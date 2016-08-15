@@ -6,10 +6,11 @@ title = "ペパボテックカンファレンス EC編に行ってきました"
 
 いま仕事でECに携わっているのもあって気になったので行ってきました。
 
+<!--more-->
+
 <a class="embedly-card" href="http://eventdots.jp/event/573086">国内No.1 ECサービス開発のすべてを語り尽くします！〜第4回ペパボテックカンファレンスEC編 - dots. [ドッツ]</a>
 <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 
-<!--more-->
 
 事情で途中退席してしまったのですが、  
 EC以外でも役に立つ内容でとても刺激になりました。

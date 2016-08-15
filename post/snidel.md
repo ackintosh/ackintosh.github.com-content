@@ -7,6 +7,8 @@ tags = ["php"]
 
 シルバーウィーク中に php のライブラリを作りました。
 
+<!--more-->
+
 <a class="embedly-card" href="https://github.com/ackintosh/snidel">ackintosh/snidel</a>
 <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 
@@ -15,7 +17,6 @@ tags = ["php"]
 他の言語のマルチスレッド等の並行・並列処理のための機構に近い書き心地で
 php で手軽に並列処理をする。というのがコンセプトです。
 
-<!--more-->
 
 子プロセス数の制御に <a href="http://php.net/manual/ja/function.msg-get-queue.php" target="_blank">メッセージキュー</a>  
 プロセス間のデータのやりとりに <a href="http://php.net/manual/ja/ref.shmop.php" target="_blank">共有メモリ</a>  
