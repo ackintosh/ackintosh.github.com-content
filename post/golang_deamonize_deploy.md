@@ -4,11 +4,11 @@ draft = false
 title = "Goアプリのデーモン化とデプロイの仕組み"
 +++
 
-夏休みのひとり開発合宿で、Go製の軽量WAF [Echo](https://echo.labstack.com/) を使ったアプリのデーモン化とデプロイの仕組みを作ってみたので雑だけどメモしておきます。
+社内の某合宿イベントで、Go製の軽量WAF [Echo](https://echo.labstack.com/) を使ったAPIサーバーを作ろうとしていて、夏休み中にデーモン化とデプロイの仕組みを作ってみたので、ちょっとまとまりきってないですが忘れないうちにメモしておきます。
 
 <!--more-->
 
-Goほぼ初心者、デプロイの仕組み作ったことない、という初めての事だらけの状態で試行錯誤しながら丸一日使ってめっちゃ疲れたけど勉強になった。hot deploy の仕組みが大変興味深いです。（[参考記事](#参考記事:c89a01ea34ec3d3b965d2855f1d3c3d0)）
+慣れない事が多くて試行錯誤しながら丸一日使ってめっちゃ疲れたけど勉強になった。hot deploy の仕組みが大変興味深いです。（[参考記事](#参考記事:c89a01ea34ec3d3b965d2855f1d3c3d0)）
 
 試行錯誤した結果、利用するツール・ライブラリは下記になりました。
 
@@ -19,6 +19,11 @@ Goほぼ初心者、デプロイの仕組み作ったことない、という初
 （githubに push したら アプリケーションサーバーが webhook 通知を受信してビルド・graceful restart する）
   - [facebookgo/grace](https://github.com/facebookgo/grace)
   - [mattn/gost](https://github.com/mattn/gost)
+
+
+(デプロイの図)
+![deploy](/images/golang_deamonize_deploy.png)
+
 
 
 ##### 試行錯誤
@@ -36,16 +41,16 @@ daemontools (プロセス管理)
 go-server-starter (ホットデプロイ)
 
 - graceful shutdown に対応していない
-- graceful shutdown に対応するために manners を使おうとすると、さらにソースコードに手をいれないといけない
-  - Echo のレールから外れてしまう・レールに乗れなくなってしまう
+- graceful shutdown に対応するために manners を使おうとするとアプリケーションのソースコードに手をいれないといけない
+  - Echo のレールから外れてしまう
 
-　→ grace ならそれらが解決される。公式に[サンプルコード](https://echo.labstack.com/recipes/graceful-shutdown)もある。
+　→ grace なら最小限の変更で済む。公式に[サンプルコード](https://echo.labstack.com/recipes/graceful-shutdown)がある。
 
 ##### 展望
 
-- ビルドサーバーを用意してバイナリを配布するかたちを作ってみたい
+- ビルドサーバーを用意してバイナリを配布する仕組みを作ってみたい
 - [monochromegane/torokko](https://github.com/monochromegane/torokko) が気になる。
-  - ([Goのデプロイを「もっと」簡単にする。ビルドプロキシCargo。改めTorokko。](http://blog.monochromegane.com/blog/2015/08/16/deploy-golang-by-cargo/)
+  - [Goのデプロイを「もっと」簡単にする。ビルドプロキシCargo。改めTorokko。](http://blog.monochromegane.com/blog/2015/08/16/deploy-golang-by-cargo/)
 
 
 ##### 参考記事
