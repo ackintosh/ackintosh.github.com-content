@@ -29,6 +29,14 @@ title = "【ペパボ×プレイド】Tech Meetup で LT"
 7月に[人生初LT](/blog/2016/07/20/phpblt5/)をしてから約2ヶ月経ったころ、  
 社内で発表者を募集してるのを見て、ネタは無いけどとりあえず立候補するか！（PHPBLTで [@sotarok](https://twitter.com/sotarok?lang=ja) さんが "発表内容は応募してから考えればいい！" って言ってたし）ということで発表することにしました。
 
-が、（自分の経験不足や、会社の名前が出てる勉強ということもあってか）、"発表内容どうしよう" の不安とプレッシャーが思いの外大きくて、ここ1ヶ月くらいは内容を練るのと資料作りで必死でした。
+が、（自分の経験不足や、会社の名前が出てる勉強ということもあってか）、"発表内容どうしよう..." という不安とプレッシャーが思いの外大きくて、ここ1ヶ月くらいは内容を練るのと資料作りで必死でした。
 
 なんとか絞りだした内容を[チーフテクニカルリード](http://diary.shu-cream.net/2016/09/01/ec-ctl.html)に相談しつつブラッシュアップしてなんとか発表を終えられてホッとしています。
+
+##### 追記
+
+プレイドさんのブログに開催エントリが公開されました！  
+みなさま、ありがとうございました！
+
+<a class="embedly-card" data-card-key="916e111541fe433792c1330eb7eba55b" data-card-controls="0" data-card-type="article" href="http://tech.plaid.co.jp/ci-testautomation-meetup/">【ペパボ×プレイド】Tech Meetup 〜自動テスト・CI編〜を開催しました！</a>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
