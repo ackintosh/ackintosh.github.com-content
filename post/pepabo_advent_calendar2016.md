@@ -1,6 +1,6 @@
 +++
 date = "2016-12-17T21:24:33+09:00"
-draft = true
+draft = false
 title = "充実した1年のスタートを ― PHPで"
 
 +++
@@ -11,7 +11,7 @@ title = "充実した1年のスタートを ― PHPで"
 
 #### ご存知でしょうか？
 
-珍しい組み込み関数があることで有名な PHP (要出典)ですが、 **date_sunrise** という関数をご存知でしょうか。
+珍しい組み込み関数があることで有名なPHP[要出典]ですが、 **date_sunrise** という関数をご存知でしょうか。
 
 [PHP: date_sunrise - Manual](http://php.net/manual/ja/function.date-sunrise.php)
 
@@ -70,11 +70,11 @@ https://github.com/php/php-src/blob/PHP-7.1.0/ext/date/php_date.c#L4834
 
 <script src="http://gist-it.appspot.com/github/php/php-src/blob/PHP-7.1.0/ext/date/php_date.c?slice=4783:4790"></script>
 
-第2引数で渡す format が、予め定義されているどれにも該当しない場合に警告を出力しています。よく見るあの警告は `php_error_docref` で出力できるようです。
+第2引数で渡す format が、予め定義されているどれにも該当しない場合に警告を出力しています。PHP で開発しているとよく見るあの警告は `php_error_docref` で出力されているようです。
 
 <script src="http://gist-it.appspot.com/github/php/php-src/blob/PHP-7.1.0/ext/date/php_date.c?slice=4791:4805"></script>
 
-ようやく時間を計算してる雰囲気のところまで来ました !!  
+ようやく時間を計算してそうなコードまでたどり着きました !!  
 肝心の計算をしているであろう `timelib_astro_rise_set_altitude` の中を見てみます。
 
 <script src="http://gist-it.appspot.com/github/php/php-src/blob/PHP-7.1.0/ext/date/lib/astro.c?slice=211:296"></script>
@@ -86,7 +86,7 @@ https://github.com/php/php-src/blob/PHP-7.1.0/ext/date/php_date.c#L4834
 
 ...
 
-**なんかちゃんと計算してるっぽいことがわかりました !**
+**なんかちゃんと計算してることがわかりました !**
 
 #### 充実した1年のスタートを ― PHPで
 
