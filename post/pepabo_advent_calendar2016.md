@@ -5,19 +5,20 @@ title = "充実した1年のスタートを ― PHPで"
 
 +++
 
-この記事は [pepabo Advent Calendar 2016](http://qiita.com/advent-calendar/2016/pepabo) 17日目の記事です。
+この記事は [pepabo Advent Calendar 2016](http://qiita.com/advent-calendar/2016/pepabo) 17日目の記事です。  
+昨日は genkiroid さんの [PHPのrequire系ステートメントと断捨離について](https://genkiroid.github.io/2016/12/16/about-turpan/) でした。コードを断捨離していきましょう!!!
 
 <!--more-->
 
 #### ご存知でしょうか？
 
-珍しい組み込み関数があることで有名なPHP[要出典]ですが、 **date_sunrise** という関数をご存知でしょうか。
+珍しい組み込み関数があることで有名な PHP[要出典] ですが、 **date_sunrise** という関数をご存知でしょうか。
 
 [PHP: date_sunrise - Manual](http://php.net/manual/ja/function.date-sunrise.php)
 
 > date_sunrise — 指定した日付と場所についての日の出時刻を返す
 
-試しに、ペパボ本社がある東京都渋谷区セルリアンタワーの元旦の日の出を出力してみます。
+試しに、ペパボ本社がある東京都渋谷区セルリアンタワーの元旦の 日の出時刻 を出力してみます。
 
 ```sh
 $ php -d date.timezone='Asia/Tokyo' -r 'echo date_sunrise(mktime(0, 0, 0, 1, 1, 2017), SUNFUNCS_RET_STRING, 35.39, 139.41);'
@@ -28,7 +29,7 @@ $ php -d date.timezone='Asia/Tokyo' -r 'echo date_sunrise(mktime(0, 0, 0, 1, 1, 
 
 
 素晴らしい...。  
-これを使って色々やれば初日の出を寝過ごすことなく、充実した1年をスタートさせることができます。必要なのは PHP とその他のごくわずかな手間だけです。
+これを使って色々やれば 2017 年の初日の出を寝過ごすことなくしっかり拝み、充実した1年をスタートさせることができます。必要なのは PHP とその他のごくわずかな手間だけです。
 
 
 ただ、 **この時間が本当にあってるのかちょっと不安** です。
@@ -92,6 +93,7 @@ https://github.com/php/php-src/blob/PHP-7.1.0/ext/date/php_date.c#L4834
 
 **緻密に計算された日の出時刻を返してくれる** date_sunrise 関数。
 
-繰り返しになりますが、これを使って色々やれば初日の出を寝過ごすことなく、充実した1年をスタートさせることができます。必要なのは PHP とその他のごくわずかな手間だけです。
+繰り返しになりますが、これを使って色々やれば 2017 年の初日の出を寝過ごすことなくしっかり拝み、充実した1年をスタートさせることができます。必要なのは PHP とその他のごくわずかな手間だけです。
 
 
+明日は、我らがEC事業部プロダクトチームの女神 ayami さんです。
