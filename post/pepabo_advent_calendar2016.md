@@ -46,7 +46,7 @@ $ php -d date.timezone='Asia/Tokyo' -r 'echo date_sunrise(mktime(0, 0, 0, 1, 1, 
 https://github.com/php/php-src/blob/PHP-7.1.0/ext/date/php_date.c#L4834
 
 
-<script src="http://gist-it.appspot.com/github/php/php-src/blob/PHP-7.1.0/ext/date/php_date.c?slice=4830:4846"></script>
+<script src="//gist-it.appspot.com/github/php/php-src/blob/PHP-7.1.0/ext/date/php_date.c?slice=4830:4846"></script>
 
 内部的には日の入り時間を返す [date_sunset](http://php.net/manual/ja/function.date-sunset.php) とかなり共通していて、`php_do_date_sunrise_sunset` の第2引数に渡すフラグで処理を分けているようです。
 
@@ -57,28 +57,28 @@ https://github.com/php/php-src/blob/PHP-7.1.0/ext/date/php_date.c#L4834
 
 つづいて `php_do_date_sunrise_sunset` の中を順番に見ていきます。
 
-<script src="http://gist-it.appspot.com/github/php/php-src/blob/PHP-7.1.0/ext/date/php_date.c?slice=4743:4762"></script>
+<script src="//gist-it.appspot.com/github/php/php-src/blob/PHP-7.1.0/ext/date/php_date.c?slice=4743:4762"></script>
 
 変数の初期化と引数を解析しています。
 
 `zend_parse_parameters` は第1引数で実行時に渡された引数の数、第2引数で引数の情報を受取り、解析した結果を第3引数以降に代入します。  
 また、第2引数 `"l|ldddd"` は、各引数の型と必須・オプションを表していて、パイプ `|` で区切られた後ろの2つめ以降がオプショナルであることがわかります。
 
-<script src="http://gist-it.appspot.com/github/php/php-src/blob/PHP-7.1.0/ext/date/php_date.c?slice=4761:4783"></script>
+<script src="//gist-it.appspot.com/github/php/php-src/blob/PHP-7.1.0/ext/date/php_date.c?slice=4761:4783"></script>
 
 つづいて、実行時に渡された引数の数によって、デフォルト値を設定しています。switch 文のフォールスルーがうまく使われていて勉強になります。  
 `INI_FLT` は php.ini の設定値を取得するための double 型用のマクロです。[マニュアル](http://php.net/manual/ja/function.date-sunrise.php)を見ると、たしかに `ini_get("date.default_latitude")` 等がデフォルトで使われると書かれています。
 
-<script src="http://gist-it.appspot.com/github/php/php-src/blob/PHP-7.1.0/ext/date/php_date.c?slice=4783:4790"></script>
+<script src="//gist-it.appspot.com/github/php/php-src/blob/PHP-7.1.0/ext/date/php_date.c?slice=4783:4790"></script>
 
 第2引数で渡す format が、予め定義されているどれにも該当しない場合に警告を出力しています。PHP で開発しているとよく見るあの警告は `php_error_docref` で出力されているようです。
 
-<script src="http://gist-it.appspot.com/github/php/php-src/blob/PHP-7.1.0/ext/date/php_date.c?slice=4791:4805"></script>
+<script src="//gist-it.appspot.com/github/php/php-src/blob/PHP-7.1.0/ext/date/php_date.c?slice=4791:4805"></script>
 
 ようやく時間を計算してそうなコードまでたどり着きました !!  
 肝心の計算をしているであろう `timelib_astro_rise_set_altitude` の中を見てみます。
 
-<script src="http://gist-it.appspot.com/github/php/php-src/blob/PHP-7.1.0/ext/date/lib/astro.c?slice=211:296"></script>
+<script src="//gist-it.appspot.com/github/php/php-src/blob/PHP-7.1.0/ext/date/lib/astro.c?slice=211:296"></script>
 
 
 フムフム...
