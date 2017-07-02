@@ -138,4 +138,4 @@ ValueError: current is not valid SemVer string
 > ValueError: current is not valid SemVer string
 
 アップグレードスクリプトは `current` -> `バージョン番号のディレクトリ` にリンクされている前提で書かれているが、Docker イメージはそうなっていない。  
-current(実ディレクトリ)の中に Re:dash がインストールされているので、現在のバージョンが判定できずエラーになっている 👍
+current(実ディレクトリ)の中に Redash がインストールされているので、現在のバージョンが判定できずエラーになっている 👍
