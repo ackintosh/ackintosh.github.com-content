@@ -4,11 +4,11 @@ draft = false
 title = "GitHub の Issue 消化状況を Kibana で可視化する"
 +++
 
-主にお問い合わせ対応 Issue の起票・クローズ件数や、クローズまでにかかった時間を可視化したかったので素振り。  
+仕事で主にお問い合わせ対応 Issue の起票・クローズ件数や、クローズまでにかかった時間を可視化したかったので素振り。 
+
+<!--more--> 
+
 以下、素振り内容をザザッとメモ。
-
-<!--more-->
-
 
 GitHub(GHE)  
 ↓  
@@ -73,9 +73,13 @@ config/kibana.yml のホスト名を変更しないとアクセスできない�
 server.host: "EC2 のパブリック DNS"
 ```
 
+"bug" ラベルがついた Issue の消化状況を可視化する。
+
 ![image](https://user-images.githubusercontent.com/1885716/28501793-67d70634-701e-11e7-9112-46d57a606e0d.png)
+
 
 ### その他
 
-webhook を受信したタイミングで、closed イベントの場合に、かかった時間( issue.closed_at - issue.created_at )を計算してログに差し込んでおけば、そのへんの分析もできそう。
+- 起票数を出すときは `labeled` イベントでフィルタする
+- webhook を受信したタイミングで、closed イベントの場合に、かかった時間( issue.closed_at - issue.created_at )を計算してログに差し込んでおけば、そのへんの分析もできそう
 
