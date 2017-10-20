@@ -1,6 +1,6 @@
 ---
 title: "Kafka Connect ColormeShop でカラーミーショップの受注をリアルタイムに分析する"
-date: 2017-10-05T20:02:45+09:00
+date: 2017-10-07T20:02:45+09:00
 draft: false
 ---
 
@@ -16,14 +16,14 @@ draft: false
 当記事では、kafka-connect-colormeshop を使ってカラーミーショップの受注をリアルタイムに分析する方法を紹介する。
 
 
-## 実装について
+## コネクタの実装について
 
 Kafka Connect には `Source Connector` と `Sink Connector` があって、今回実装したのは `Source Connector` の方。つまり、[カラーミーショップAPI](https://shop-pro.jp/func/api/)からデータを取ってきて Kafka トピックのレコードとして保存する役割。
 
 Connector の中身は `Connector` `ConnectorConfig` `Task` の3つで構成されている。
 
 - `Connector` : Kafka Connect のワーカープロセスの開始/終了時の挙動を定義する。
-- `ConnectorConfig` : コネクタが扱う設定項目について型・必須/任意・説明を定義する。定義した設定が [kafka-connect-ui](https://github.com/Landoop/kafka-connect-ui) でどのように反映されるかを後述する。
+- `ConnectorConfig` : コネクタが扱う設定項目について型・必須/任意・説明を定義する。
 - `Task` : おそらくコネクタの実装で一番作り込むところ。ワーカーが行う具体的な処理を定義する。
 
 
@@ -78,7 +78,7 @@ Region Map は 5.5.0 で実装された、国や都市の単位で集計・可�
 - [Region Maps | Kibana User Guide [5.6] | Elastic](https://www.elastic.co/guide/en/kibana/current/regionmap.html)
 - [Region Map で都道府県のデータを描画してみた #Kibana ｜ Developers.IO](http://dev.classmethod.jp/server-side/elasticsearch/kibana-region-map-custom-geojson/)
 
-都道府県の描画に必要な GeoJSON の設定は予め kibana.yml に設定してあるので、下記を行うだけで良い。
+都道府県の描画に必要な設定はリポジトリ内の [kibana.yml](https://github.com/ackintosh/kafka-connect-colormeshop/blob/master/kibana.yml) に予め設定してあるので、下記を行うだけで良い。
 
 Data タブの Field で `customer.pref_id`を選択する。
 
@@ -88,7 +88,7 @@ Option タブの Layer Settings で `Japan` `Prefecture id` を選択する。
 
 ![](https://s3-ap-northeast-1.amazonaws.com/ackintosh.github.io/kafka-connector-colormeshop-real-time-analytics/regionmap-option.png)
 
-「▶」を押すと集計結果が地図上に描画される。
+「▶」を押すと集計結果が地図上に描画される。かっこいい！
 
 ![](https://s3-ap-northeast-1.amazonaws.com/ackintosh.github.io/kafka-connector-colormeshop-real-time-analytics/regionmap-japan.png)
 
