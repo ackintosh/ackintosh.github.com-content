@@ -12,7 +12,7 @@ tags: ["java"]
 
 [synchronized メソッドの挙動を JVM のスレッドダンプを見ながら確かめる · 暁](/blog/2017/11/04/java-synchronized/)
 
-以下、 List の操作を例にとって、"スレッドセーフではない" プログラムと CopyOnWriteArrayList クラスを使った改善方法、それから CopyOnWriteArrayList クラスがどのように競合を回避しているかを見ていく。
+以下、 List の操作を例にとって "スレッドセーフではない" プログラムを確認してから、 CopyOnWriteArrayList クラスを使ってスレッドセーフなプログラムに改善し、最後に CopyOnWriteArrayList クラスがどのように競合を回避しているかを見ていく。
 
 ## スレッドセーフではないプログラム
 
