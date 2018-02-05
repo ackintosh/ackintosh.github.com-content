@@ -19,10 +19,13 @@ OpenAPI仕様からドキュメント、APIクライアントやサーバース�
 
 利用するには、ビルド済みのjarファイルをダウンロードしたり、Macユーザーならhomebrewで安定版をインストールして使うことができるが、下記ではリポジトリから最新のmasterブランチをcloneして使う方法を挙げておく。
 
-```
+```bash
+# setup
 $ git clone https://github.com/swagger-api/swagger-codegen
 $ cd swagger-codegen
 $ ./run-in-docker.sh mvn package
+
+# generate php client
 $ ./run-in-docker.sh generate \
     -i path/to/your-api-specification.yml \
     -l php \
