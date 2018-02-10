@@ -34,7 +34,7 @@ $ ls -la ./out/php-client
 ```
 
 これだけでAPI仕様に沿ったPHPクライアントが生成できる。  
-その他、そもそものOpenAPIの仕様や生成するコードをカスタマイズする方法についての詳細は、Swagger Codegenのトップコントリビュータ [@win328](https://twitter.com/wing328) が執筆した電子書籍を参照することをお勧めします。
+その他、そもそものOpenAPIの仕様や生成するコードをカスタマイズする方法についての詳細は、Swagger Codegenのトップコントリビュータ [@wing328](https://twitter.com/wing328) が執筆した電子書籍を参照することをお勧めします。
 
 [A Beginner's Guide to Code Generation for REST APIs](https://gumroad.com/a/1072608371)
 
@@ -55,9 +55,9 @@ https://martinfowler.com/bliki/CircuitBreaker.html
 
 外部API呼び出しにおいて、呼び出し先が高負荷などにより応答しなくなった場合に、その障害が呼び出し元に連鎖してしまうことを防ぐための実装パターン。
 
-Circuit BreakerがAPI呼び出しの成功/失敗(タイムアウト)を監視し、閾値を超えるとOpenステータスとなり、API呼び出しを遮断(Reject)する。この挙動により障害の連鎖を防止する。また、一定時間経過後にCircuit BreakerはHalf Openステータスとなり一部のAPI呼び出しを通すようになる。呼び出しが成功すれば障害が収束したとみなしてCircuit Breakerは元のステータス(Closed)となり、全ての呼び出しを許可する。
+Circuit BreakerがAPI呼び出しの成功/失敗(タイムアウト)を監視し、失敗が閾値を超えるとOpenステータスとなり、API呼び出しを遮断(Reject)する。この挙動により障害の連鎖を防止する。また、一定時間経過後にCircuit BreakerはHalf Openステータスとなり一部のAPI呼び出しを通すようになる。呼び出しが成功すれば障害が収束したとみなしてCircuit Breakerは元のステータス(Closed)となり、全ての呼び出しを許可する。
 
-つまり人手を介することなくCircuit Breakerが呼び出し先の異常を検知し、飛び火することをいい感じに防止してくれる。Circuit Breakerのステータス遷移についてよりイメージしやすいように、ファウラーのブログから図を引用させていただく。
+つまり人手を介することなくCircuit Breakerが呼び出し先の異常を検知し、飛び火することをいい感じに防止してくれる。Circuit Breakerのステータス遷移についてよりイメージしやすいように、Martin Fowler氏のブログから図を引用させていただく。
 
 ![circuit_breaker_state.png](https://s3-ap-northeast-1.amazonaws.com/ackintosh.github.io/swagger-codegen-with-circuit-breaker-in-php-ja/circuit_breaker_state.png)
 
@@ -150,7 +150,7 @@ Ganeshaについての詳細はぜひ [README](https://github.com/ackintosh/gane
 
 ---
 
-2014年のファウラーのブログ [Microservices](https://martinfowler.com/articles/microservices.html) で提唱されたマイクロサービスは、今日では広く知られ一般的になった手法だと思います。また、マイクロサービスがバズる以前から、コンポーネント同士をAPIで繋いでサービスを構成しているケースは多くあったのではないでしょうか。  
+2014年にMartin Fowler氏のブログ [Microservices](https://martinfowler.com/articles/microservices.html) で提唱されたマイクロサービスは、今日では広く知られ一般的になった手法だと思います。また、マイクロサービスがバズる以前から、コンポーネント同士をAPIで繋いでサービスを構成しているケースは多くあったのではないでしょうか。  
 みなさんは障害の連鎖を経験されたことがありますか？恥ずかしながら私はあります(一度ではなく、何度も...)。あのときの悔しさがGaneshaを開発するモチベーションになっているのかもしれません。
 
 この記事がみなさまの開発効率化とサービス安定運用のご参考になれば幸いです。
