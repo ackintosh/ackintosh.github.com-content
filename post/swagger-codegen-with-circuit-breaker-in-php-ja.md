@@ -2,6 +2,7 @@
 title: "Swagger Codegen + Circuit Breaker in #PHP"
 date: 2018-02-05T22:51:53+09:00
 draft: false
+description: Swagger CodegenによるAPIクライアント自動生成、Circuit Breakerによる障害連鎖の防止と、Circuit BreakerのPHP実装であるGaneshaをSwagger Codegenで生成したAPIクライアントに組み込む方法のご紹介。
 ---
 
 ( English version is coming soon! )
