@@ -7,7 +7,7 @@ menu = "main"
 中野 暁人 (Akihito Nakano)
 
 * Web application developer
-* A member of [Swagger Codegen](https://github.com/swagger-api/swagger-codegen) Core Team
+* [OpenAPI Generator](https://github.com/OpenAPITools/openapi-generator) Core Team/Founding Member.
 
 ### Career History
 
