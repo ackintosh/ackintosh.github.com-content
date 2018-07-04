@@ -7,7 +7,7 @@ menu = "main"
 中野 暁人 (Akihito Nakano)
 
 * Web application developer
-* [OpenAPI Generator](https://github.com/OpenAPITools/openapi-generator) Core Team/Founding Member.
+* Core Team & founding member of [OpenAPI Generator](https://github.com/OpenAPITools/openapi-generator)
 
 ### Career History
 
