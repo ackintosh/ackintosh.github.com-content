@@ -9,7 +9,7 @@ menu = "main"
 * Web application developer
 * Core Team & founding member of [OpenAPI Generator](https://github.com/OpenAPITools/openapi-generator)
 
-### Career History
+## Career History
 
 * 2016.5 [GMOペパボ株式会社](https://pepabo.com/)に入社. EC支援サービスの開発に従事.
 * 2013.10 [EMTG株式会社](https://emtg.co.jp/)に入社. ファンサイト/ファンクラブやECサイトの開発に従事.
@@ -17,19 +17,91 @@ menu = "main"
 * 2007.4 IT技術者派遣企業に入社. PCセットアップ等の軽作業に従事しながらCCNAやLPIC等の資格を取得.
 * 2007.3 音楽系専門学校(4年制)卒業.
 
-### Products
+## Products
 
 * [Ganesha](https://github.com/ackintosh/ganesha): PHP implementation of Circuit Breaker pattern.
 * [Snidel](https://github.com/ackintosh/snidel): A multi-process container. It looks like multi-thread-ish.
 
-### Talks
+## Talks
 
 * [プライベートAPIのクライアントをいい感じにしたい](https://speakerdeck.com/akihito_nakano/pepabo-ec-tech-mtg02), 2017.5.16, GMOペパボ社内勉強会
 * [サーキットブレーカー 〜 有料契約店舗数 国内 No.1 ECサービスに神を宿す 〜](https://speakerdeck.com/akihito_nakano/pepabo-ec-tech-mtg01), 2017.3.9, GMOペパボ社内勉強会
 * [並行・並列処理のテストは難しい](https://speakerdeck.com/akihito_nakano/bing-xing-bing-lie-chu-li-falsetesutohanan-sii), 2016.10.27, [【ペパボ×プレイド】Tech Meetup 〜自動テスト・CI編〜](https://plaidtech.connpass.com/event/41401/)
 * [並列処理で消耗しているかたへ - Snidel のご紹介](https://speakerdeck.com/akihito_nakano/bing-lie-chu-li-dexiao-hao-siteirukatahe-snidel-falsegoshao-jie), 2016.7.20, [PHP BLT #5](https://phpblt.connpass.com/event/35070/)
 
-### Books
+## Books
 
 [REST APIのためのコード生成入門 - Swagger Codegenを利用したRESTful API開発の効率化](https://gumroad.com/l/swagger_codegen_beginner_jp)  
 William Cheng 著, 中野暁人 / 和田拓朗 訳
+
+
+## Skills
+
+現在在籍しているGMOペパボという会社では、エンジニアの評価を行う上で「技術力」を "作り上げる力" "時間の経過に耐える力" "影響を広げる力" の3つに分解して選考が進められています。
+
+[ペバボのエンジニア職位制度のアップデートについて - Kentaro Kuribayashi's blog](https://blog.kentarok.org/entry/2014/07/10/230856)
+
+これらの基準は当該企業の事業内容等への依存が一切無くきれいに一般化されていますので、以下でもこの3つの力の観点を使わせていただきながら私の技術力について書きます。
+
+(ブログで公開できるレベルまで一般化した表現で自身の技術力について継続的に書き出すことで、対外的なアピールと、自身の振り返りと今後を考える材料としていきます)
+
+### 1. 作り上げる力
+
+> これは、一般に技術力といった場合に想像しやすい能力でしょう。「他の人にはない、技術的に優れた何か」を用いて、技術的に困難な問題を、素早く、確実に解決することができる、ということです。
+
+###### オープンソースソフトウェア(OSS)への貢献とそれを業務に活かすサイクル
+
+[OpenAPI Generator](https://github.com/OpenAPITools/openapi-generator)という、[Swagger CodegenをフォークしたOSS](https://ackintosh.github.io/blog/2018/05/12/openapi-generator/)で[Core Team](https://github.com/OpenAPITools/openapi-generator#61---openapi-generator-core-team)のメンバーとして活動しています。
+
+<貢献度の高さ>
+
+当該プロジェクトの立ち上げ期(OSSプロジェクトとして公開する前に非公開リポジトリで開発を行っていた期間)の唯一最重要な課題がOpenAPI Specification3(OAS3)への対応でした。  
+40人以上のSwagger Codegenのコントリビュータがフォークすることに賛同し、プロジェクト公開までの1ヶ月半の間に300以上のプルリクエストが送信されました。このうち私が出した25のPRがマージされていて、これはPR数でいうと上から3番目になります。(非公開リポジトリでの作業なのでPRは見れませんが、OpenAPI Generatorのコミットログとして残っています)  
+また、[Contributors](https://github.com/OpenAPITools/openapi-generator/graphs/contributors)の上位10人に入っており貢献度の高さの証明になっていると思います。
+
+<貢献の多様さ>
+
+プロジェクトの公開時はメディア数社にリリースの通知を行いPublickey様に記事化していただきました。
+
+[REST API仕様からAPIクライアントやスタブサーバを自動生成する「OpenAPI Generator」オープンソースで公開。Swagger Codegenからのフォーク － Publickey](https://www.publickey1.jp/blog/18/rest_apiapiopenapi_generatorswagger_generator.html)
+
+また、[Twitterの公式アカウント](https://twitter.com/oas_generator)で国内ユーザーのフォローを行ったり、プロジェクトへのコントリビュートに関心を持っている開発者に対してTechnical Committeeへの参加を呼びかけ、[実際に加入していただく](https://github.com/OpenAPITools/openapi-generator/pull/575)など、コードを書くこと以外の面でも貢献しています。
+
+<業務に活かすサイクル>
+
+このようにしてプライベートで携わっているソフトウェアを自身の担当業務に導入し、導入して感じた課題をフィードバックするサイクルを実践している例を2つ挙げます。
+
+"OpenAPIドキュメントのバリデーションをCIのプロセスに組み込む"
+
+OpenAPI Generatorには、`validate` サブコマンドでドキュメントの妥当性をチェックすることができます。これをCIのプロセスに組み込むことで、OASのフォーマットの間違いを機械的に検出することができるようになりました。  
+また、[v3.0.2](https://github.com/OpenAPITools/openapi-generator/releases/tag/v3.0.2)では `validate` サブコマンドに `--recommend` オプションが追加されており、私はこの機能の仕様検討に参加していました。
+
+[CLI: add info about unused schemas in the validate command · Issue #142 · OpenAPITools/openapi-generator](https://github.com/OpenAPITools/openapi-generator/issues/142)
+
+
+"OpenAPIドキュメントから自動生成したAPIクライアントを公式クライアントとして公開する"
+
+自身が担当しているサービスのAPIクライアントをOpenAPI Generatorを利用して生成/公開しました。
+
+[pepabo/colormeshop-ruby](https://github.com/pepabo/colormeshop-ruby)
+
+公開していく中で感じた改善点を下記のようにフィードバックしています。
+
+- [[Ruby] Make rake tasks required to publish gem available by ackintosh · Pull Request #424 · OpenAPITools/openapi-generator](https://github.com/OpenAPITools/openapi-generator/pull/424)
+- [Improve generation of README which has long description by ackintosh · Pull Request #400 · OpenAPITools/openapi-generator](https://github.com/OpenAPITools/openapi-generator/pull/400)
+
+このように高い質・量・スピードでソフトウェアを改善しながら、それを業務に導入することでサービスの改善とOSSへのフィードバックのサイクルを回すことがわたしの作り上げる力を示しています。
+
+(((WIP)))
+
+### 2. 時間の経過に耐える力
+
+> 一方で、我々が作るものは、単に一度作れば済むものではなく、継続的に価値を届け続けるべきものです。つまり、ある特定の時点における線の価値のみが高いだけでは不十分です。それに加えて、時間の経過に対して積分的な面の価値を増大させる必要があります。そのためには、設計力、テストを書く能力が必要です。
+
+(((WIP)))
+
+### 3. 影響を広げる力
+
+> さらには、上記の能力に基づいて、自分や身の回りだけではなく、エンジニアリングにおけるリーダーとして影響力を広い範囲に及ぼせることも、シニア、アドバンスドシニアには求められます。技術的には技術レイヤーの上下方向へ、プロセス的には広い範囲の人々を巻き込んでいく左右方向へ、それぞれ影響を広げていける能力です。
+
+(((WIP)))
