@@ -57,11 +57,11 @@ William Cheng 著, 中野暁人 / 和田拓朗 訳
 
 当該プロジェクトの立ち上げ期(OSSプロジェクトとして公開する前に非公開リポジトリで開発を行っていた期間)の唯一最重要な課題がOpenAPI Specification3(OAS3)への対応でした。  
 40人以上のSwagger Codegenのコントリビュータがフォークすることに賛同し、プロジェクト公開までの1ヶ月半の間に300以上のプルリクエストが送信されました。このうち私が出した25のPRがマージされていて、これはPR数でいうと上から3番目になります。(非公開リポジトリでの作業なのでPRは見れませんが、OpenAPI Generatorのコミットログとして残っています)  
-また、[Contributors](https://github.com/OpenAPITools/openapi-generator/graphs/contributors)の上位10人に入っており貢献度の高さの証明になっていると思います。
+また、[Contributors](https://github.com/OpenAPITools/openapi-generator/graphs/contributors)の上位10人に入っており貢献度の高さの証明になっています。
 
 <貢献の多様さ>
 
-プロジェクトの公開時はメディア数社にリリースの通知を行いPublickey様に記事化していただきました。
+プロジェクトの公開時はメディア数社にリリースの通知を行いPublickey様に記事化していただきました。はてなブックマークで400以上ブックマークされており、これをきっかけに一気に国内での認知が広まりました。
 
 [REST API仕様からAPIクライアントやスタブサーバを自動生成する「OpenAPI Generator」オープンソースで公開。Swagger Codegenからのフォーク － Publickey](https://www.publickey1.jp/blog/18/rest_apiapiopenapi_generatorswagger_generator.html)
 
@@ -71,7 +71,7 @@ William Cheng 著, 中野暁人 / 和田拓朗 訳
 
 このようにしてプライベートで携わっているソフトウェアを自身の担当業務に導入し、導入して感じた課題をフィードバックするサイクルを実践している例を2つ挙げます。
 
-"OpenAPIドキュメントのバリデーションをCIのプロセスに組み込む"
+(1) "OpenAPIドキュメントのバリデーションをCIのプロセスに組み込む"
 
 OpenAPI Generatorには、`validate` サブコマンドでドキュメントの妥当性をチェックすることができます。これをCIのプロセスに組み込むことで、OASのフォーマットの間違いを機械的に検出することができるようになりました。  
 また、[v3.0.2](https://github.com/OpenAPITools/openapi-generator/releases/tag/v3.0.2)では `validate` サブコマンドに `--recommend` オプションが追加されており、私はこの機能の仕様検討に参加していました。
@@ -79,7 +79,7 @@ OpenAPI Generatorには、`validate` サブコマンドでドキュメントの�
 [CLI: add info about unused schemas in the validate command · Issue #142 · OpenAPITools/openapi-generator](https://github.com/OpenAPITools/openapi-generator/issues/142)
 
 
-"OpenAPIドキュメントから自動生成したAPIクライアントを公式クライアントとして公開する"
+(2) "OpenAPIドキュメントから自動生成したAPIクライアントを公式クライアントとして公開する"
 
 自身が担当しているサービスのAPIクライアントをOpenAPI Generatorを利用して生成/公開しました。
 
@@ -90,15 +90,28 @@ OpenAPI Generatorには、`validate` サブコマンドでドキュメントの�
 - [[Ruby] Make rake tasks required to publish gem available by ackintosh · Pull Request #424 · OpenAPITools/openapi-generator](https://github.com/OpenAPITools/openapi-generator/pull/424)
 - [Improve generation of README which has long description by ackintosh · Pull Request #400 · OpenAPITools/openapi-generator](https://github.com/OpenAPITools/openapi-generator/pull/400)
 
-このように高い質・量・スピードでソフトウェアを改善しながら、それを業務に導入することでサービスの改善とOSSへのフィードバックのサイクルを回すことがわたしの作り上げる力を示しています。
-
-(((WIP)))
+このように高い質・量・スピードでソフトウェアを改善しながら、それを業務に導入することでサービスの改善とOSSへのフィードバックのサイクルを回すことが私の作り上げる力を示しています。
 
 ### 2. 時間の経過に耐える力
 
 > 一方で、我々が作るものは、単に一度作れば済むものではなく、継続的に価値を届け続けるべきものです。つまり、ある特定の時点における線の価値のみが高いだけでは不十分です。それに加えて、時間の経過に対して積分的な面の価値を増大させる必要があります。そのためには、設計力、テストを書く能力が必要です。
 
-(((WIP)))
+##### 目指しているアーキテクチャが抱えるであろう課題を見通してオープンなかたちで解決する
+
+当時、ロジックが様々なロール/言語でそれぞれ実装されているために機能追加や保守が難しくなってきている背景があり、それを解決するために(ロジックが集約された)APIを中心にして、[サービスを提供するロール群がそれを取り囲むようなかたちのアーキテクチャ](https://speakerdeck.com/akihito_nakano/pepabo-ec-tech-mtg01?slide=7)に移行するという方針のもと事業部全体の開発が進められていました。
+
+その中で私は [中心に据えたAPIの障害が周辺のロールに波及してしまう](https://speakerdeck.com/akihito_nakano/pepabo-ec-tech-mtg01?slide=9) ことを懸念し、その対策として[サーキットブレーカーの導入について事業部のTech MTGで発表](https://ackintosh.github.io/blog/2017/03/09/pepabo-tech-mtg01/)し、社内にカスケード障害の危険性とサーキットブレーカーの有効性を啓蒙しました。
+
+<script async class="speakerdeck-embed" data-id="3fd29695180c42d9b564e6b2d491bf0a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+また、APIを利用するのはPHPで実装されたロールが多いのでPHP製のサーキットブレーカーのライブラリをいくつか試したのですが良いのが見つからなかったので自分で実装しGanesha(ガネーシャ)という名前でオープンソースとして公開しています。
+
+[ackintosh/ganesha: PHP implementation of Circuit Breaker pattern.](https://github.com/ackintosh/ganesha)
+
+Tech MTGでの発表では実際にGaneshaが動作する様子をデモし、上々の評判をいただきました。Ganeshaはその後も[Redisアダプタの実装](https://github.com/ackintosh/ganesha/pull/7)や[GuzzleMiddlewareの対応](https://github.com/ackintosh/ganesha/pull/12)のように開発を継続していて、[Github star](https://github.com/ackintosh/ganesha/stargazers)も3ケタが見えてきています。
+
+
+このように、プロダクトが目指しているアーキテクチャが抱えるであろう課題を見通し、すばやく手を動かしながらオープンなかたちで解決することが私の時間の経過に耐える力を示しています。
 
 ### 3. 影響を広げる力
 
