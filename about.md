@@ -21,6 +21,7 @@ menu = "main"
 
 * [Ganesha](https://github.com/ackintosh/ganesha): PHP implementation of Circuit Breaker pattern.
 * [Snidel](https://github.com/ackintosh/snidel): A multi-process container. It looks like multi-thread-ish.
+* [Toumi](https://github.com/ackintosh/toumi): A library for including legacy php file.
 
 ## Talks
 
