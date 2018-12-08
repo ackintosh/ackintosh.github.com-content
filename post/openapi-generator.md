@@ -62,3 +62,21 @@ https://github.com/OpenAPITools/openapi-generator
 
 OpenAPI Generator Core Team/Founding Member  
 Akihito Nakano
+
+---
+
+#### 追記
+
+プロジェクトの公開から半年以上が経ちました。[Publickey様に取り上げていただいた](https://www.publickey1.jp/blog/18/rest_apiapiopenapi_generatorswagger_generator.html)のを起点にして、国内でのOpenAPI Generatorの認知が確実に広がっているのを感じています。国内エンジニアのかたが[Gin(Golang)のジェネレータを追加](https://github.com/OpenAPITools/openapi-generator/pull/1048)したり、プルリクエストをされているのを頻繁に見かけるようになりました。🙏🙏🙏
+
+このブログ記事も少しはアクセスがあるようですので、現時点(2018年12月)のOpenAPI Generatorの今後の展望を追記しておきます。
+
+##### OpenAPI 3.0対応の拡充
+
+すべての言語でOAS3に対応したと前述しましたが、とはいっても3.0で追加されたすべての機能を網羅できているわけではありません。たとえば[Callbackオブジェクト](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#callback-object)は、現在ジェネレータの[コア部分の対応](https://github.com/OpenAPITools/openapi-generator/pull/861)が済んだところで、各言語の対応はまだこれからという状況です。ですので短期的には、このような網羅できていない部分の対応を進めるのが課題の一つです(開発のロードマップを[こちら](https://github.com/OpenAPITools/openapi-generator/blob/master/docs/roadmap.adoc)で公開しています)。
+
+##### より強いコミュニティへ
+
+OpenAPI Generatorは「コミュニティ主体」のプロジェクトですので、よりたくさんのエンジニアに関わっていただきたいと考えています。現在、コミュニティには[Core Team](https://github.com/OpenAPITools/openapi-generator#61---openapi-generator-core-team)と[Technical Committee](https://github.com/OpenAPITools/openapi-generator#62---openapi-generator-technical-committee)という2つの役割を設けていますが、新しい役割を新設して、アクティブに活動されている方に積極的に権限を渡していく試みを始めています。このようにプロジェクトの横への広がりだけでなく、関心のある方はより深く関わっていけるよう縦の広がりも作っていくことを進めています。
+
+もし、OpenAPI Generatorを触ってみて気になったことや不明点がありましたら[国内エンジニア向けの gitter チャットルーム](https://gitter.im/openapi-generator-japanese/Lobby)がありますのでぜひ覗いてみてください。日本国内のコントリビュータが集まっていますので、日本語で気軽に相談できます。
