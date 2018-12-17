@@ -33,17 +33,6 @@ menu = "main"
 
 ## Books
 
-### REST APIのためのコード生成入門 - Swagger Codegenを利用したRESTful API開発の効率化
-
-<a href="https://gumroad.com/l/swagger_codegen_beginner_jp" target="_blank">
-![REST APIのためのコード生成入門](https://s3-ap-northeast-1.amazonaws.com/ackintosh.github.io/translator-debut/swagger_codegen_beginner_jp.jpg)
-</a>
-
-https://gumroad.com/l/swagger_codegen_beginner_jp  
-William Cheng 著, 中野暁人 / 和田拓朗 訳  
-1〜3章の翻訳を担当  
-2018年2月 発売
-
 ### WEB+DB PRESS Vol.108｜技術評論社
 
 <a href="https://gihyo.jp/magazine/wdpress/archive/2019/vol108" target="_blank">
@@ -54,6 +43,16 @@ https://gihyo.jp/magazine/wdpress/archive/2019/vol108
 「特集1 ［効率急上昇！］スキーマ駆動Web API開発」の1章後半〜2章を執筆  
 2018年12月22日 発売
 
+### REST APIのためのコード生成入門 - Swagger Codegenを利用したRESTful API開発の効率化
+
+<a href="https://gumroad.com/l/swagger_codegen_beginner_jp" target="_blank">
+![REST APIのためのコード生成入門](https://s3-ap-northeast-1.amazonaws.com/ackintosh.github.io/translator-debut/swagger_codegen_beginner_jp.jpg)
+</a>
+
+https://gumroad.com/l/swagger_codegen_beginner_jp  
+William Cheng 著, 中野暁人 / 和田拓朗 訳  
+1〜3章の翻訳を担当  
+2018年2月 発売
 
 ## Skills
 
