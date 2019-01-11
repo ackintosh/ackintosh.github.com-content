@@ -10,7 +10,7 @@ menu = "main"
 * Core Team & founding member of [OpenAPI Generator](https://github.com/OpenAPITools/openapi-generator)
 * My Patreon page 😊 : [Akihito Nakano is creating Open-Source Software | Patreon](https://www.patreon.com/ackintosh)
 
-## Career History
+## Career history
 
 * 2018.12 [アスクル株式会社](https://www.askul.co.jp/)に入社. 個人向けECサイトの開発に従事.
 * 2016.5 [GMOペパボ株式会社](https://pepabo.com/)に入社. EC支援サービスの開発に従事.
@@ -31,6 +31,10 @@ menu = "main"
 * [サーキットブレーカー 〜 有料契約店舗数 国内 No.1 ECサービスに神を宿す 〜](https://speakerdeck.com/akihito_nakano/pepabo-ec-tech-mtg01), 2017.3.9, GMOペパボ社内勉強会
 * [並行・並列処理のテストは難しい](https://speakerdeck.com/akihito_nakano/bing-xing-bing-lie-chu-li-falsetesutohanan-sii), 2016.10.27, [【ペパボ×プレイド】Tech Meetup 〜自動テスト・CI編〜](https://plaidtech.connpass.com/event/41401/)
 * [並列処理で消耗しているかたへ - Snidel のご紹介](https://speakerdeck.com/akihito_nakano/bing-lie-chu-li-dexiao-hao-siteirukatahe-snidel-falsegoshao-jie), 2016.7.20, [PHP BLT #5](https://phpblt.connpass.com/event/35070/)
+
+## Blog posts
+
+* [新人エンジニア(中途)が語るアスクルの魅力 - ASKUL Engineering BLOG](https://tech.askul.co.jp/entry/2019/01/09/163743)
 
 ## Books
 
