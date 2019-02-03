@@ -27,6 +27,7 @@ menu = "main"
 
 ## Talks
 
+* [平静を保ち、コードを生成せよ 〜 OpenAPI Generator誕生の背景と軌跡 〜](https://speakerdeck.com/akihito_nakano/gunmaweb34), 2019.2.2, [Gunma.web #34 スキーマ駆動開発](https://gunmaweb.connpass.com/event/113974/)
 * [プライベートAPIのクライアントをいい感じにしたい](https://speakerdeck.com/akihito_nakano/pepabo-ec-tech-mtg02), 2017.5.16, GMOペパボ社内勉強会
 * [サーキットブレーカー 〜 有料契約店舗数 国内 No.1 ECサービスに神を宿す 〜](https://speakerdeck.com/akihito_nakano/pepabo-ec-tech-mtg01), 2017.3.9, GMOペパボ社内勉強会
 * [並行・並列処理のテストは難しい](https://speakerdeck.com/akihito_nakano/bing-xing-bing-lie-chu-li-falsetesutohanan-sii), 2016.10.27, [【ペパボ×プレイド】Tech Meetup 〜自動テスト・CI編〜](https://plaidtech.connpass.com/event/41401/)
