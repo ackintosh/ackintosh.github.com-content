@@ -8,6 +8,7 @@ menu = "main"
 
 * Web application developer
 * Core Team & founding member of [OpenAPI Generator](https://github.com/OpenAPITools/openapi-generator)
+* Open Source Software Creator : [github.com/ackintosh](https://github.com/ackintosh/)
 * My Patreon page 😊 : [Akihito Nakano is creating Open-Source Software | Patreon](https://www.patreon.com/ackintosh)
 
 ## Career history
@@ -27,6 +28,7 @@ menu = "main"
 
 ## Talks
 
+* [カート刷新プロジェクトにおけるOpenAPIを活用したコード自動生成の今と明日](https://speakerdeck.com/akihito_nakano/astudy20190419), 2019.4.19, アスクル社内勉強会
 * [平静を保ち、コードを生成せよ 〜 OpenAPI Generator誕生の背景と軌跡 〜](https://speakerdeck.com/akihito_nakano/gunmaweb34), 2019.2.2, [Gunma.web #34 スキーマ駆動開発](https://gunmaweb.connpass.com/event/113974/)
 * [プライベートAPIのクライアントをいい感じにしたい](https://speakerdeck.com/akihito_nakano/pepabo-ec-tech-mtg02), 2017.5.16, GMOペパボ社内勉強会
 * [サーキットブレーカー 〜 有料契約店舗数 国内 No.1 ECサービスに神を宿す 〜](https://speakerdeck.com/akihito_nakano/pepabo-ec-tech-mtg01), 2017.3.9, GMOペパボ社内勉強会
