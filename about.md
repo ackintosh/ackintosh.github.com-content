@@ -8,7 +8,7 @@ menu = "main"
 
 * Web application developer
 * Core Team & founding member of [OpenAPI Generator](https://github.com/OpenAPITools/openapi-generator)
-* Open Source Software Creator : [github.com/ackintosh](https://github.com/ackintosh/)
+* Open Source Software Creator : <a href="https://github.com/ackintosh/"><span class="icon-github"></a>
 * My Patreon page 😊 : [Akihito Nakano is creating Open-Source Software | Patreon](https://www.patreon.com/ackintosh)
 
 ## Career history
