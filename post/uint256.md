@@ -12,7 +12,8 @@ Ethereumのスマートコントラクト記述に使われる言語 Solidity �
 <!--more-->
 
 ## paritytech/parity-common
-parity-common配下の primitive-types クレートに `U256` 構造体が定義されている。
+
+[parity-common](https://github.com/paritytech/parity-common) 配下の [primitive-types](https://github.com/paritytech/parity-common/tree/master/primitive-types) クレートに `U256` 構造体が定義されている。
 
 https://github.com/paritytech/parity-common/blob/ed95e273199dd7b63fe113eb76b4dc0f927270df/primitive-types/src/lib.rs#L51-L54
 
