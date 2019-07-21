@@ -42,6 +42,17 @@ menu = "main"
 
 ## Books
 
+### REST APIのためのコード生成入門 - OpenAPI Generatorを利用したRESTful API開発の効率化
+
+<a href="https://gumroad.com/l/openapi_generator_ebook_jp" target="_blank">
+![REST APIのためのコード生成入門](https://s3-ap-northeast-1.amazonaws.com/ackintosh.github.io/about/openapi_generator_beginner_jp.jpg)
+</a>
+
+https://gumroad.com/l/openapi_generator_ebook_jp  
+William Cheng 著, 中野暁人 / 和田拓朗 訳  
+※ 2018年2月に発売した "REST APIのためのコード生成入門" の内容をOpenAPI Generatorで更新したもの  
+2019年7月 発売
+
 ### WEB+DB PRESS Vol.108｜技術評論社
 
 <a href="https://gihyo.jp/magazine/wdpress/archive/2019/vol108" target="_blank">
