@@ -147,7 +147,7 @@ OpenAPI Generatorには、`validate` サブコマンドでドキュメントの�
 
 [ackintosh/ganesha: PHP implementation of Circuit Breaker pattern.](https://github.com/ackintosh/ganesha)
 
-Tech MTGでの発表では実際にGaneshaが動作する様子をデモし、上々の評判をいただきました。Ganeshaはその後も[Redisアダプタの実装](https://github.com/ackintosh/ganesha/pull/7)や[GuzzleMiddlewareの対応](https://github.com/ackintosh/ganesha/pull/12)のように開発を継続していて、[Github star](https://github.com/ackintosh/ganesha/stargazers)も3ケタが見えてきています。
+Tech MTGでの発表では実際にGaneshaが動作する様子をデモし、上々の評判をいただきました。Ganeshaはその後も[Redisアダプタの実装](https://github.com/ackintosh/ganesha/pull/7)や[GuzzleMiddlewareの対応](https://github.com/ackintosh/ganesha/pull/12)のように開発を継続しています。現在(2019-08-01)、[実際に海外のサービスで採用](https://github.com/ackintosh/ganesha#companies-using-ganesha-rocket)されていたり、[Github star数](https://github.com/ackintosh/ganesha/stargazers)は "191" で [Packagistで公開されている "Circuit Breaker" タグが付いている中で最もスター数が多い](https://packagist.org/?tags=circuit%20breaker)ライブラリです。
 
 
 このように、プロダクトが目指しているアーキテクチャが抱えるであろう課題を見通し、すばやく手を動かしながらオープンなかたちで解決することが私の時間の経過に耐える力を示しています。
