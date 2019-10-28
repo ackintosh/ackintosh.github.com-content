@@ -216,5 +216,5 @@ Ethereumと比べるとextension nodeが無いぶんシンプルになったが�
 
 Libraのステート管理まわりのコードを追うことで、Jellyfish Merkle Treeの実装を見つけることができた。（今のところコレについてドキュメントやホワイトペーパーには書かれていない）
 
-Jellyfish Merkle Treeは後発ということもあってか、EthereumのModified Merkle Patricia Trieでは表現できていないnon-inclusionの効率的な証明を考慮した実装になっている。（ちゃんとEthereumの実装を見たわけではないので正確な比較ではないかもしれない。追って理解を深めていきたい）
+Jellyfish Merkle Treeは後発ということもあってか、EthereumのModified Merkle Patricia Trieでは表現できていないnon-inclusionの効率的な証明を考慮した実装になっている。（と言いつつ、ちゃんとEthereumの実装を見たわけではないので正確な比較ではないかもしれない。追って理解を深めていきたい）
 
