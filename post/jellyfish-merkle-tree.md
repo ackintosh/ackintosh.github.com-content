@@ -139,7 +139,7 @@ https://github.com/libra/libra/blob/e3d03cfe7540479b1e6e75abe9c9e8faf6f8ca32/sto
 </a>
 
 
-一方でJellyfish Merkle Treeはどうかというと、先述のとおりノードはinternalとleafの2種類。Internal Nodeが、Ethereumでいうところのbranch nodeとextension nodeの役割を兼ねている。
+一方でJellyfish Merkle Treeはどうかというと、先述のとおりノードはinternalとleafの2種類。Internal NodeがEthereumでいうところのbranch nodeの役割で、extension nodeに該当するものは無い。
 
 先程のEthereumの図と同じステートをJellyfish Merkle Treeで表現したのが下記。
 Ethereumと比べるとextension nodeが無いぶんシンプルになったが、ツリーの階層が深くなってしまった。ただし、この階層の深さはnon-inclusionを効率的に証明する（ = Sparse Merkle Treeとしての性質を満たす）ために必要なのではないかと想像している。（要勉強...!）
@@ -216,5 +216,5 @@ Ethereumと比べるとextension nodeが無いぶんシンプルになったが�
 
 Libraのステート管理まわりのコードを追うことで、Jellyfish Merkle Treeの実装を見つけることができた。（今のところコレについてドキュメントやホワイトペーパーには書かれていない）
 
-Jellyfish Merkle Treeは後発ということもあってか、EthereumのModified Merkle Patricia Trieでは表現できていないnon-inclusionの効率的な証明を考慮した実装になっている。（と言いつつ、ちゃんとEthereumの実装を見たわけではないので正確な比較ではないかもしれない。追って理解を深めていきたい）
+Jellyfish Merkle Treeは後発ということもあってか、EthereumのModified Merkle Patricia Trieでは表現できていないnon-inclusionの効率的な証明を考慮した実装になっている。（と言いつつ、ちゃんとEthereumの実装を見たわけではないので正確な比較ではないかもしれない。追って理解を深めていきたい...!）
 
