@@ -98,7 +98,7 @@ https://github.com/libra/libra/blob/9832f16cfa0231178db96d5b8447af003dd6f1cd/sto
 
 ## Jellyfish Merkle Tree
 
-Jellyfish Merkle Treeは初めて聞いたのでググってみたがヒットしない。Libraが独自に実装したツリー構造のようだ。
+Jellyfish Merkle Treeは初めて聞いたのでググってみたがヒットしない。Libraが独自に実装したツリー構造なのだろうか？
 
 storage/jellyfish-merkle
 https://github.com/libra/libra/blob/e3d03cfe7540479b1e6e75abe9c9e8faf6f8ca32/storage/jellyfish-merkle/src/lib.rs#L19
