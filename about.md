@@ -28,6 +28,7 @@ menu = "main"
 
 ## Talks
 
+* [Libraの現状と技術面をざっくりと 〜ソフトウェアに飲み込まれていく世界に生きる私たち〜](https://speakerdeck.com/akihito_nakano/astudy20191114), 2019.11.14, アスクル社内勉強会
 * [Developer Experience (DX) for Open-Source Projects (English, Japanese)](https://speakerdeck.com/wing328/developer-experience-dx-for-open-source-projects-english-japanese), 2019.07.19, [Open Source Summit + Automotive Linux Summit Japan 2019](https://ossalsjp19.sched.com/event/OVsc/developer-experience-dx-for-open-source-projects-how-to-engage-developers-and-build-a-growing-developer-community-william-cheng-akihito-nakano-founding-team-members-of-openapi-generator)
 * [カート刷新プロジェクトにおけるOpenAPIを活用したコード自動生成の今と明日](https://speakerdeck.com/akihito_nakano/astudy20190419), 2019.4.19, アスクル社内勉強会
 * [平静を保ち、コードを生成せよ 〜 OpenAPI Generator誕生の背景と軌跡 〜](https://speakerdeck.com/akihito_nakano/gunmaweb34), 2019.2.2, [Gunma.web #34 スキーマ駆動開発](https://gunmaweb.connpass.com/event/113974/)
