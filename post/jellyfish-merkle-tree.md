@@ -212,6 +212,14 @@ Ethereumと比べるとextension nodeが無いぶんシンプルになったが�
  }
 ```
 
+### 実際は4bitのSparse Merkle Treeが連なったもの
+
+執筆時点のソースコードにはJellyfish Merkle Treeの説明には [256bitのSparse Merkle Tree](https://github.com/libra/libra/blob/e3d03cfe7540479b1e6e75abe9c9e8faf6f8ca32/storage/jellyfish-merkle/src/lib.rs#L12) であると書かれているが、厳密にいうと4bitのSparse Merkle Treeが最大深さ64まで連なって256bitアドレスのステートを表現したツリーということになる（と理解している）。
+
+下記のように、Internal Nodeが4bitのSparse Merkle Tree( = アドレスの16進数表記の1桁)になっていて、これが最大で深さ64になる。
+
+![internalnode_sparsemerkle](https://s3-ap-northeast-1.amazonaws.com/ackintosh.github.io/jellyfish-merkle-tree/internalnode_sparsemerkle.png)
+
 ## おわりに
 
 Libraのステート管理まわりのコードを追うことで、Jellyfish Merkle Treeの実装を見つけることができた。（今のところコレについてドキュメントやホワイトペーパーには書かれていない）
