@@ -8,14 +8,14 @@ menu = "main"
 
 * Web application developer
 * Core Team & founding member of [OpenAPI Generator](https://github.com/OpenAPITools/openapi-generator)
-* Open Source Software Creator : <a href="https://github.com/ackintosh/"><span class="icon-github"></a>
-* My Patreon page 😊 : [Akihito Nakano is creating Open-Source Software | Patreon](https://www.patreon.com/ackintosh)
+* Open-source software creator : <a href="https://github.com/ackintosh/"><span class="icon-github"></a>
+* [Sponsor @ackintosh on GitHub Sponsors](https://github.com/sponsors/ackintosh) 😊
 
 ## Career history
 
 * 2018.12 [アスクル株式会社](https://www.askul.co.jp/)に入社. 個人向けECサイトの開発に従事.
 * 2016.5 [GMOペパボ株式会社](https://pepabo.com/)に入社. EC支援サービスの開発に従事.
-* 2013.10 [EMTG株式会社](https://emtg.co.jp/)に入社. ファンサイト/ファンクラブやECサイトの開発に従事.
+* 2013.10 [EMTG株式会社](https://emtg.co.jp/)に入社. エンターテイメント系ファンサイト/ファンクラブやECサイトの開発に従事.
 * 2010.7 プログラミングに興味を持ち[株式会社ユアシスト](https://www.uassist.co.jp/)に入社. EC-CUBE, WordPress等でのサイト制作に従事.
 * 2007.4 IT技術者派遣企業に入社. PCセットアップ等の軽作業に従事しながらCCNAやLPIC等の資格を取得.
 * 2007.3 音楽系専門学校(4年制)卒業.
