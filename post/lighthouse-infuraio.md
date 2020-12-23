@@ -1,5 +1,5 @@
 +++
-date = "2020-12-23T16:55:14+09:00"
+date = "2020-12-24T00:00:14+09:00"
 draft = false
 title = "infura.ioを使ってBeacon Node(lighthouse)を立てる時に遭遇したエラー"
 tags = ["lighthouse"]
@@ -9,6 +9,10 @@ share = true	# set false to hide share buttons
 menu= ""		# set "main" to add this content to the main menu
 author = ""
 +++
+
+この記事は [Ethereum Advent Calendar 2020](https://qiita.com/advent-calendar/2020/ethereum) 24日目の記事です。
+
+---
 
 Beacon Nodeを稼働させるためには、利用するEthereum(eth1)のエンドポイントを指定する必要があるが、ちょっと動作を検証してみたい程度のときに自前でeth1クライアントを立てておくのはやや骨が折れる。そういった場合には infura.io が便利。
 
