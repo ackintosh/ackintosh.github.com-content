@@ -26,10 +26,17 @@ Beacon Nodeを稼働させるためには、利用するEthereum(eth1)のエン�
 執筆時点の最新（lighthouse v1.0.4 ）を前提にしている。  
 https://github.com/sigp/lighthouse/releases/tag/v1.0.4
 
+## 遭遇したエラーメッセージ
+
+Beacon Nodeを起動してまもなく下記のエラーメッセージが出てきた。
+
+```
+Dec 23 10:46:29.801 ERRO Failed to update eth1 cache             error: Failed to update eth1 cache: "All fallback errored: https://goerli.infura.io/v3/{APIキー} => GetDepositLogsFailed(\"Eth1 node returned error: {\\\"code\\\":-32005,\\\"message\\\":\\\"query returned more than 10000 results\\\"}\")", retry_millis: 7000, service: eth1_rpc
+```
 
 ## どこでエラー出ているのか
 
-エラーログの内容から、場所はすぐに特定できる。
+エラーログの内容から、場所はすぐに特定できた。
 
 https://github.com/sigp/lighthouse/blob/7933596c891db74e344292e650b05f49673ab830/beacon_node/eth1/src/service.rs#L847
 
