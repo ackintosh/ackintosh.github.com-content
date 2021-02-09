@@ -1,8 +1,8 @@
 +++
 date = "2020-12-24T00:00:14+09:00"
 draft = false
-title = "infura.ioを使ってBeacon Node(lighthouse)を立てる時に遭遇したエラー"
-tags = ["lighthouse"]
+title = "Infuraを使ってBeacon Node(lighthouse)を立てる時に遭遇したエラー"
+tags = ["lighthouse", "Ethereum"]
 image = ""
 comments = true	# set false to hide Disqus
 share = true	# set false to hide share buttons
@@ -14,7 +14,7 @@ author = ""
 
 ---
 
-Beacon Nodeを稼働させるためには、利用するEthereum(eth1)のエンドポイントを指定する必要があるが、ちょっと動作を検証してみたい程度のときに自前でeth1クライアントを立てておくのはやや骨が折れる。そういった場合には infura.io が便利。
+Beacon Nodeを稼働させるためには、利用するEthereum(eth1)のエンドポイントを指定する必要があるが、ちょっと動作を検証してみたい程度のときに自前でeth1クライアントを立てておくのはやや骨が折れる。そういった場合には [Infura](https://infura.io/) が便利。
 
 [Ethereum API | IPFS API Gateway | ETH Nodes as a Service | Infura](https://infura.io/)
 
@@ -22,7 +22,7 @@ Beacon Nodeを稼働させるためには、利用するEthereum(eth1)のエン�
 ※ [Launch Pad](https://launchpad.ethereum.org/)の手順では、ネットワークの分散のために自前でクライアントを立てることが推奨されているので、本格的な運用の場合は自前で立てる方が良いのだろう。
 
 
-以下、eth1バックエンドとしてinfura.ioを使ってBeacon Node(lighthouse)を立てようとした時に遭遇したエラーメッセージと、それについて調べたことをメモしておく。
+以下、eth1バックエンドとしてInfuraを使ってBeacon Node(lighthouse)を立てようとした時に遭遇したエラーメッセージと、それについて調べたことをメモしておく。
 
 <!--more-->
 
@@ -72,7 +72,7 @@ https://github.com/sigp/lighthouse/blob/7933596c891db74e344292e650b05f49673ab830
 
 ## なぜエラー出ているのか
 
-infura.ioのドキュメントに、ひとつのクエリでは最大 10,000 の結果を返すとの制限事項書かれている。おそらく、レンジで指定されているブロックに 10,000 を超える数のログが含まれているためにエラーになっているのだろう。
+Infuraのドキュメントに、ひとつのクエリでは最大 10,000 の結果を返すとの制限事項書かれている。おそらく、レンジで指定されているブロックに 10,000 を超える数のログが含まれているためにエラーになっているのだろう。
 
 [Infura Documentation | Infura Documentation](https://infura.io/docs/ethereum/json-rpc/ratelimits)
 
