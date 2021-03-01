@@ -18,7 +18,7 @@ author = ""
 
 ## 対象のテストコード
 
-今回読むテストコードは [こちら](https://github.com/sigp/discv5/blob/f47dac2e1f59735bb0affe3502372c21d758cc4e/src/discv5/test.rs#L162) で、FINDNODEリクエストに対して期待通りのノード数が得られるかを確認するテスト。
+今回読むテストコードは [こちら](https://github.com/sigp/discv5/blob/f47dac2e1f59735bb0affe3502372c21d758cc4e/src/discv5/test.rs#L162) で、[Discv5::find_node()](https://github.com/sigp/discv5/blob/f47dac2e1f59735bb0affe3502372c21d758cc4e/src/discv5.rs#L432) の結果が期待通りのノード数を得られるかを確認するテスト。
 
 ## ノードの起動
 
@@ -55,9 +55,11 @@ https://github.com/sigp/discv5/blob/f47dac2e1f59735bb0affe3502372c21d758cc4e/src
 
 ![initial_kbuckets](https://s3-ap-northeast-1.amazonaws.com/ackintosh.github.io/dicv5-discovery-three-peers/initial_kbuckets.png)
 
-### node1 から FINDNODEリクエストを送信する
+### node1 から find_node() を実行する
 
+引数は target_node のノードID。  
 https://github.com/sigp/discv5/blob/f47dac2e1f59735bb0affe3502372c21d758cc4e/src/discv5/test.rs#L204-L209
+
 
 メッセージの仕様
 
