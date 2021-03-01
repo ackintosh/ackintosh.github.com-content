@@ -57,7 +57,13 @@ https://github.com/sigp/discv5/blob/f47dac2e1f59735bb0affe3502372c21d758cc4e/src
 
 ### node1 から FINDNODEリクエストを送信する
 
+https://github.com/sigp/discv5/blob/f47dac2e1f59735bb0affe3502372c21d758cc4e/src/discv5/test.rs#L204-L209
+
+メッセージの仕様
+
 - [FINDNODE](https://github.com/ethereum/devp2p/blob/master/discv5/discv5-wire.md#findnode-request-0x03)
 - [NODES](https://github.com/ethereum/devp2p/blob/master/discv5/discv5-wire.md#nodes-response-0x04)
+
+シーケンス図
 
 ![sequence](https://s3-ap-northeast-1.amazonaws.com/ackintosh.github.io/dicv5-discovery-three-peers/sequence.png)
