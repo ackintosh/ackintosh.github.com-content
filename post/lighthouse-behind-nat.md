@@ -34,3 +34,9 @@ Ethereumのコンセンサスクライアントは、[Node Discovery Protocol v5
 
 <a href="/post/lighthouse-behind-nat.png" target="_blank">![lighthouse-behind-nat.png](/post/lighthouse-behind-nat.png)</a>
 
+## 2022-07-28 追記
+
+NAT越えのための [Rendezvous protocol というのが議論されて](https://github.com/ethereum/devp2p/issues/207) いて、まだ仕様は固まっていないが先んじて sigp/discv5 で[実装が進められている](https://github.com/sigp/discv5/pull/134)。
+
+この記事で紹介したNAT越えの処理は、Rendezvous protocol で置き換えられることになるかもしれない。
+
