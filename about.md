@@ -9,7 +9,7 @@ menu = "main"
 * Strongly interested in distributed systems and peer-to-peer networking.
 * Building Ethereum at Sigma Prime part-time. | 2022 - current
 * Web application developer at ASKUL | 2018 - current
-* Core Team & founding member of [OpenAPI Generator](https://github.com/OpenAPITools/openapi-generator) | 2018 - 2020
+* Formerly core team & founding member of [OpenAPI Generator](https://github.com/OpenAPITools/openapi-generator) | 2018 - 2020
 
 ## Career history
 
