@@ -1,16 +1,14 @@
 ---
-title: "Lighthouseが自動的にNAT越えする仕組み"
+title: "Lighthouseノードが自分の公開アドレスを自動的に認識する仕組み"
 date: 2022-07-13T17:35:46+09:00
 draft: false
 ---
 
-NATを利用して外部と接続されているプライベートネットワーク内のノードが外部とP2Pの通信を行う場合、NAT越え（NAT Traversal）の対応が必要になる。LighthouseにはUPnPの機能が備わっているが、一応、これを使わなくても自動的にNAT越えをして動作するようになっている。（「一応」と書いたのは、できればUPnPなどの何かしらの設定を行うことが推奨されているので）
+例えば一般的なネット環境下にあるラップトップでLighthouseノードを起動した場合、NATの背後でノードが稼働することになる。この場合、ノードは自力で自分の公開IPアドレス/ポートを知ることは難しい。また、インターネットプロバイダの都合により稼働中に公開アドレスが変更になる可能もある。
+
+Lighthouseには公開IPアドレス/ポートを自動的に認識する仕組みがあるので、どのようにして実現されているのか調べた。
 
 <!--more-->
-
-[Advanced Networking - Lighthouse Book](https://lighthouse-book.sigmaprime.io/advanced_networking.html#nat-traversal-port-forwarding)
-
-この、何も設定しなくても自動的にNAT越えする機能がどのようにして実現されているのか調べたので下記に整理していきたい。
 
 まず前提知識としていくつかおさらいしておく。
 
@@ -24,19 +22,19 @@ Ethereumのコンセンサスクライアント（旧称: Eth2クライアント
 
 Ethereumのコンセンサスクライアントは、[Node Discovery Protocol v5](https://github.com/ethereum/devp2p/blob/master/discv5/discv5.md) というプロトコルを利用してノードディスカバリを行っている。Lighthouseでは、このプロトコルのRust実装である [sigp/discv5](https://github.com/sigp/discv5) を利用している。
 
-後に説明するNAT越えは、このプロトコルで規定されている [PONGレスポンス](https://github.com/ethereum/devp2p/blob/master/discv5/discv5-wire.md#pong-response-0x02) に含まれる `recipient-ip` と `recipient-port` と、 [sigp/discv5](https://github.com/sigp/discv5) に実装されている [IpVote](https://github.com/sigp/discv5/blob/559227b4e62f5113934b8c99cf1355bbb83a6f93/src/service/ip_vote.rs#L10) によって実現されている。
+後に説明する仕組みは、このプロトコルで規定されている [PONGレスポンス](https://github.com/ethereum/devp2p/blob/master/discv5/discv5-wire.md#pong-response-0x02) に含まれる `recipient-ip` と `recipient-port` と、 [sigp/discv5](https://github.com/sigp/discv5) に実装されている [IpVote](https://github.com/sigp/discv5/blob/559227b4e62f5113934b8c99cf1355bbb83a6f93/src/service/ip_vote.rs#L10) によって実現されている。
 
 なお、現時点の Node Discovery Protocol v5 の仕様を見る限りでは `IpVote` は規定されていない。なので [sigp/discv5](https://github.com/sigp/discv5) が独自に実装しているのかもしれない。他のコンセンサスクライアントにも同じような実装があるかもしれないが調べていない。
 
-## NAT Traversal
+## 公開アドレスを認識する仕組み
 
-文章でまとめるのが難しいのでシーケンス図に整理した。
+文章でまとめるのが難しかったためシーケンス図に整理したので参照されたい。
+
+補足：下図のノードAとノードBが直接通信できるかどうかは、NAT超えの課題があるので、まだ別の問題になる。
 
 <a href="/post/lighthouse-behind-nat.png" target="_blank">![lighthouse-behind-nat.png](/post/lighthouse-behind-nat.png)</a>
 
 ## 2022-07-28 追記
 
-NAT越えのための [Rendezvous protocol というのが議論されて](https://github.com/ethereum/devp2p/issues/207) いて、まだ仕様は固まっていないが先んじて sigp/discv5 で[実装が進められている](https://github.com/sigp/discv5/pull/134)。
-
-この記事で紹介したNAT越えの処理は、Rendezvous protocol で置き換えられることになるかもしれない。
+関連するトピックとして、NAT越えのための [Rendezvous protocol というのが議論されて](https://github.com/ethereum/devp2p/issues/207) いて、まだ仕様は固まっていないが先んじて sigp/discv5 で[実装が進められている](https://github.com/sigp/discv5/pull/134)。
 
