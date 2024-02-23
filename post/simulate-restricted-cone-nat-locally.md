@@ -12,6 +12,8 @@ Reproducing specific network topology is important in network protocol developme
 
 <!--more-->
 
+Edit: I've published a Docker-based one - https://github.com/ackintosh/discv5-hole-punching. I hope it helps you.
+
 ## Network topology
 
 The diagram below shows network topology that this post describes. There are three segments: `10.0.0.0/8`, `192.168.1.0/24` and `192.168.2.0/24`. In this example, we assume `10.0.0.0/8` is public network, and `192.168.1.0/24` and `192.168.2.0/24` are private network that behind NAT.
@@ -42,7 +44,7 @@ These settings above enable the important characteristics of Restricted Cone NAT
 
 ## Mininet
 
-Building the network topology needs various configurations in addition to the iptables settings. These can be scripted using [Mininet](https://mininet.org/). I’ve published the script to build the network topology described in this post:
+Building the network topology needs various configurations in addition to the iptables settings. These can be scripted using [Mininet](https://mininet.org/). I've published the script to build the network topology described in this post:
 
 [ackintosh/udp-hole-punching: This repository provides a simulated Restricted Cone NAT environment.](https://github.com/ackintosh/udp-hole-punching)
 
