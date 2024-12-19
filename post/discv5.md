@@ -34,7 +34,7 @@ Ethereumは執筆時点で[10,000以上のノードが稼働](https://ccaf.io/cb
 
 ## Node Discovery Protocol v5
 
-Node Discovery Protocol v5（以下、discv5）は分散ハッシュテーブルの手法である [Kademlia](https://ja.wikipedia.org/wiki/Kademlia) を基に、Ethereum向けに設計されたプロトコルです。
+[Node Discovery Protocol v5](https://github.com/ethereum/devp2p/blob/master/discv5/discv5.md)（以下、discv5）は分散ハッシュテーブルの手法である [Kademlia](https://ja.wikipedia.org/wiki/Kademlia) を基に、Ethereum向けに設計されたプロトコルです。
 
 ### Node Discoveryの流れ
 
