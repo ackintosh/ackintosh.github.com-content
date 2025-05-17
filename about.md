@@ -29,16 +29,17 @@ menu = "main"
 * [OpenAPI Generator Meetup #1 〜人類総コントリビュータ化計画〜](https://speakerdeck.com/akihito_nakano/openapi-generator-meetup-number-1), 2020.03.10, [OpenAPI Generator Meetup #1](https://openapi-generator-meetup.connpass.com/event/168187/)
 * [Libraの現状と技術面をざっくりと 〜ソフトウェアに飲み込まれていく世界に生きる私たち〜](https://speakerdeck.com/akihito_nakano/astudy20191114), 2019.11.14, アスクル社内勉強会
 * [Developer Experience (DX) for Open-Source Projects (English, Japanese)](https://speakerdeck.com/wing328/developer-experience-dx-for-open-source-projects-english-japanese), 2019.07.19, [Open Source Summit + Automotive Linux Summit Japan 2019](https://ossalsjp19.sched.com/event/OVsc/developer-experience-dx-for-open-source-projects-how-to-engage-developers-and-build-a-growing-developer-community-william-cheng-akihito-nakano-founding-team-members-of-openapi-generator)
-* [カート刷新プロジェクトにおけるOpenAPIを活用したコード自動生成の今と明日](https://speakerdeck.com/akihito_nakano/astudy20190419), 2019.4.19, アスクル社内勉強会
-* [平静を保ち、コードを生成せよ 〜 OpenAPI Generator誕生の背景と軌跡 〜](https://speakerdeck.com/akihito_nakano/gunmaweb34), 2019.2.2, [Gunma.web #34 スキーマ駆動開発](https://gunmaweb.connpass.com/event/113974/)
-* [プライベートAPIのクライアントをいい感じにしたい](https://speakerdeck.com/akihito_nakano/pepabo-ec-tech-mtg02), 2017.5.16, GMOペパボ社内勉強会
+* [カート刷新プロジェクトにおけるOpenAPIを活用したコード自動生成の今と明日](https://speakerdeck.com/akihito_nakano/astudy20190419), 2019.04.19, アスクル社内勉強会
+* [平静を保ち、コードを生成せよ 〜 OpenAPI Generator誕生の背景と軌跡 〜](https://speakerdeck.com/akihito_nakano/gunmaweb34), 2019.02.02, [Gunma.web #34 スキーマ駆動開発](https://gunmaweb.connpass.com/event/113974/)
+* [プライベートAPIのクライアントをいい感じにしたい](https://speakerdeck.com/akihito_nakano/pepabo-ec-tech-mtg02), 2017.05.16, GMOペパボ社内勉強会
 * [サーキットブレーカー 〜 有料契約店舗数 国内 No.1 ECサービスに神を宿す 〜](https://speakerdeck.com/akihito_nakano/pepabo-ec-tech-mtg01), 2017.3.9, GMOペパボ社内勉強会
 * [並行・並列処理のテストは難しい](https://speakerdeck.com/akihito_nakano/bing-xing-bing-lie-chu-li-falsetesutohanan-sii), 2016.10.27, [【ペパボ×プレイド】Tech Meetup 〜自動テスト・CI編〜](https://plaidtech.connpass.com/event/41401/)
-* [並列処理で消耗しているかたへ - Snidel のご紹介](https://speakerdeck.com/akihito_nakano/bing-lie-chu-li-dexiao-hao-siteirukatahe-snidel-falsegoshao-jie), 2016.7.20, [PHP BLT #5](https://phpblt.connpass.com/event/35070/)
+* [並列処理で消耗しているかたへ - Snidel のご紹介](https://speakerdeck.com/akihito_nakano/bing-lie-chu-li-dexiao-hao-siteirukatahe-snidel-falsegoshao-jie), 2016.07.20, [PHP BLT #5](https://phpblt.connpass.com/event/35070/)
 
 ## Blog posts
 
-* [新人エンジニア(中途)が語るアスクルの魅力 - ASKUL Engineering BLOG](https://tech.askul.co.jp/entry/2019/01/09/163743)
+* [検索×機械学習への入門 〜 エラーが教えてくれた「プラグインの中身」とコントリビュートのチャンス - ASKUL Engineering BLOG](https://tech.askul.co.jp/entry/2025/05/13/105941), 2025.05.13
+* [新人エンジニア(中途)が語るアスクルの魅力 - ASKUL Engineering BLOG](https://tech.askul.co.jp/entry/2019/01/09/163743), 2019.01.09
 
 ## Books
 
